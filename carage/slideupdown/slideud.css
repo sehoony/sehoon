@@ -1,0 +1,9 @@
+*{margin: 0; padding: 0;}
+ul,li{list-style: none;}
+#slide{width: 1200px; height: 400px; margin: 0 auto; overflow: hidden;}
+#slide ul{width: 3600px; transition: 1s; display: flex;}
+#slide li{width: 1200px; height: 400px;}
+#slide li:nth-child(1){background: #faa;}
+#slide li:nth-child(2){background: #afa;}
+#slide li:nth-child(3){background: #aaf;}
+#slide li:nth-child(3){background: #aaf;}

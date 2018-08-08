@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            /*$("#menu1").find(".name").css("border","4px solid black")
+            $("#menu2>li").click(function () {
+                alert($(this).index());
+            })*/
+            //$("#menu1").children(":eq(0)").css("border","4px solid red")
+        $(".eb1").parent().css("border","4px solid yellow");
+        $(".eb2").parent().css("border","4px solid yellow");
+        //조상노드찾기
+        $(".eb1").parents().css("background","green");
+        $("#menu2>.eb2").prev().css("border","4px solid red");
+        $("#menu2>.name").prevAall().css("color","red");
+        $("#menu1>.eb1").next().css("color","red");
+        })
+    </script>
+</head>
+<body>
+    <div><img src="" alt=""></div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var count=7;
+            $("#add").click(function () {
+                //$(".select").after("<li>menu"+count+"</li>");
+                //$(".select").before("<li>menu"+count+"</li>");
+                //$(".select").prepand("<li>menu"+count+"</li>");
+                //$(".select").append("<li>menu"+count+"</li>");
+                //$(".menu").after("<li>menu"+count+"</li>");
+                //$(".menu").before("<li>menu"+count+"</li>");
+                //$(".menu").prepand("<li>menu"+count+"</li>");
+                //$(".menu").append("<li>menu"+count+"</li>");
+                count++;
+            })
+        })
+    </script>
+</head>
+<body>
+<ul class="menu">
+    <li>menu1</li>
+    <li>menu2</li>
+    <li class="select">menu3</li>
+    <li>menu4</li>
+    <li>menu5</li>
+    <li>menu6</li>
+</ul>
+<button id="add">추가버튼</button>
+</body>
+</html>

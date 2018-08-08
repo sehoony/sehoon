@@ -1,0 +1,17 @@
+*{margin: 0; padding: 0;}
+ul, li {list-style: none;}
+a{text-decoration: none;}
+#slide-fade{width: 1000px; height: 400px; overflow: hidden; margin: 0 auto; position: relative;}
+#slide-fade ul{height: 400px;}
+#slide-fade li{position: absolute; left: 0; right: 0; bottom: 0; top: 0; opacity: 0; transition: 1s;}
+#slide-fade li.active{opacity: 1; z-index: 10;}
+#slide-fade li:nth-child(1){background: #faa;}
+#slide-fade li:nth-child(2){background: #ffa;}
+#slide-fade li:nth-child(3){background: #aff;}
+.arrow{position: absolute; z-index: 20; top: 150px; height: 50px; line-height: 50px; font-size: 30px; line-height: 50px;}
+.arrow.left{left: 0; margin-left: 10px;}
+.arrow.right{right: 0; margin-right: 10px;}
+.pos{position: absolute; left: 0; right: 0; top: 370px; text-align: center; bottom: 20px; z-index: 20;}
+.pos a{width: 20px; height: 20px; border-radius: 20px; background: #aaa; display: inline-block;}
+.pos a:hover,
+.pos a.active{background: #000000; color: white; text-decoration: none;}

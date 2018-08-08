@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>j</title>
+    <link rel="stylesheet" href="./slideud.css">
+    <!--<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>-->
+    <script type="text/javascript">
+        window.onload = function () {
+            var $ = document.querySelectorAll.bind(document);
+            var slide = $("#slide ul")[0];
+            var len = $("#slide li").length;
+            var pos = 0;
+            setInterval(function () {
+                if (++pos >= len) pos = 0;
+                slide.style.marginLeft = -pos * 100 + "%"
+            }, 2000);
+        }
+    </script>
+</head>
+<body>
+    <div id="slide">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+    </div>
+</body>
+</html>

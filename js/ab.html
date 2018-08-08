@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            /*$("#menu>li").css("font-size","100px");
+            var font=$("#menu>li").css("font-size");
+            alert("글자크기는"+font+"입니다.")*/
+
+            /*$("#plus").click(function () {
+                var font=parseInt($("#menu>li").eq(0).css("font-size"));
+                alert(font);
+                $("#menu>li").eq(0).css("font-size",font+1);
+            });
+            $("#plus").click(function () {
+                var font=parseInt($("#menu>li").eq(1).css("font-size"));
+                alert(font);
+                $("#menu>li").eq(1).css("font-size",font+2);
+            });
+            $("#plus").click(function () {
+                var font=parseInt($("#menu>li").eq(2).css("font-size"));
+                alert(font);
+                $("#menu>li").eq(2).css("font-size",font+3);
+            });
+            $("#mn").click(function () {
+                var font=parseInt($("#menu>li").css("font-size"));
+                alert(font);
+                $("#menu>li").css("font-size",font-1);
+            });*/
+
+            /*$("#plus").click(function () {
+               $("#menu>li").each(function (i) {
+                   var font=parseInt($(this).css("font-size"));
+                   $(this).css("font-size",font+(i+1));
+               })
+            });
+           $(".select").css({
+               width:100,
+               height:50,
+               background:"red"
+           })*/
+            $("#menu2>li").each(function (i) {
+                $(this).html("메뉴"+(1+i));
+            });
+            /*$("#menu2>li").click(function () {
+                $(this).addClass("a");
+            });*/
+            $("#menu2>li").click(function () {
+                $(this).toggleClass("a")
+            });
+            var daumLogo=$("img").attr("src");
+            var daumSite=$("a").attr("a");
+            $(".daum").attr("src",daumLogo);
+            $(".daum1").attr("src",daumSite);
+        });
+    </script>
+    <style>
+        .a{font-size: 40px; background: yellow; color: red;}
+    </style>
+</head>
+<body>
+<ul id="menu">
+    <li>menu1</li>
+    <li>menu2</li>
+    <li>menu3</li>
+    <li>menu4</li>
+    <li class="select">menu5</li>
+</ul>
+<ul id="menu2">
+    <li>menu</li>
+    <li>menu</li>
+    <li>menu</li>
+    <li>menu</li>
+    <li>menu</li>
+</ul>
+<button id="plus">+</button>
+<button id="mn">-</button>
+<button id="add">클래스</button>
+<img src="http://m1.daumcdn.net/svc/image/U03/common_icon/52E1CEEA0379830003" alt="">
+<a href="https://www.daum.net/?nil_profile=mini&nil_src=daum">다음</a>
+<img class="daum" src="daum" alt="">
+<a class="daum1"  href="">다음1</a>
+</body>
+</html>

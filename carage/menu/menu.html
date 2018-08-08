@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        a{text-decoration: none; color:inherit;}
+        ul,li{list-style: none;}
+        .gnb{display: flex;}
+        .gnb a{display: block; transition: 0.3s;}
+        .gnb>li{position: relative;}
+        .gnb>li>a{padding: 15px 40px; color: #09f;}
+        .gnb>li:hover>a{background: #09f; color: white;}
+        .gnb>li>ul{display: none; position: absolute; left: 0; right: 0;}
+        .gnb>li>ul a{background: #666; color: white; text-align: center;}
+        .gnb>li>ul a:hover{background: white; color: #0099ff;}
+    </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script type="text/javascript">
+        $(document)
+            .on('mouseenter mouseleave', '.gnb li', function () {
+                $(this).find('ul').stop().slideToggle(300)
+            })
+    </script>
+</head>
+<body>
+<ul class="gnb">
+    <li><a href="#!">menu1</a>
+        <ul>
+            <li><a href="#">sub_menu1</a></li>
+            <li><a href="#">sub_menu2</a></li>
+            <li><a href="#">sub_menu3</a></li>
+        </ul>
+    </li>
+    <li><a href="#!">menu2</a>
+        <ul>
+            <li><a href="#">sub_menu1</a></li>
+            <li><a href="#">sub_menu2</a></li>
+            <li><a href="#">sub_menu3</a></li>
+        </ul>
+    </li>
+    <li><a href="#!">menu3</a>
+        <ul>
+            <li><a href="#">sub_menu1</a></li>
+            <li><a href="#">sub_menu2</a></li>
+            <li><a href="#">sub_menu3</a></li>
+        </ul>
+    </li>
+</ul>
+</body>
+</html>

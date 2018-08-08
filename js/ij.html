@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#menu li").click(function () {
+                $(this).remove();
+            });
+            $("#delete").click(function () {
+                $("ul.menu li").remove();
+            });
+        })
+    </script>
+</head>
+<body>
+<ul class="menu">
+    <li>menu1</li>
+    <li>menu2</li>
+    <li class="select">menu3</li>
+    <li>menu4</li>
+    <li>menu5</li>
+    <li>menu6</li>
+</ul>
+<button id="delete">삭제</button>
+</body>
+</html>
